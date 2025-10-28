@@ -1,0 +1,468 @@
+```mermaid
+graph LR
+root("Object")
+root --> root_computer_system
+root_computer_system("computer_system: High-Performance Desktop")
+root --> root_central_processing_unit
+root_central_processing_unit("central_processing_unit")
+root_central_processing_unit --> root_central_processing_unit_manufacturer
+root_central_processing_unit_manufacturer("manufacturer: AMD")
+root_central_processing_unit --> root_central_processing_unit_model
+root_central_processing_unit_model("model: Ryzen 7 5800X")
+root_central_processing_unit --> root_central_processing_unit_specifications
+root_central_processing_unit_specifications("specifications")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_cores
+root_central_processing_unit_specifications_cores("cores: 8 Cores")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_threads
+root_central_processing_unit_specifications_threads("threads: 16 Threads")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_base_clock
+root_central_processing_unit_specifications_base_clock("base_clock: 3.8 GHz")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_max_boost
+root_central_processing_unit_specifications_max_boost("max_boost: 4.7 GHz")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_cache
+root_central_processing_unit_specifications_cache("cache: L3: 32MB, L2: 4MB, L1: 512KB")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_tdp
+root_central_processing_unit_specifications_tdp("tdp: 105 Watts")
+root_central_processing_unit_specifications --> root_central_processing_unit_specifications_socket
+root_central_processing_unit_specifications_socket("socket: AM4")
+root_central_processing_unit --> root_central_processing_unit_connections
+root_central_processing_unit_connections["connections"]
+root_central_processing_unit_connections --> root_central_processing_unit_connections_item0
+root_central_processing_unit_connections_item0("Connected to Motherboard CPU Socket")
+root_central_processing_unit_connections --> root_central_processing_unit_connections_item1
+root_central_processing_unit_connections_item1("Powered by CPU Power Connector (8-Pin)")
+root_central_processing_unit_connections --> root_central_processing_unit_connections_item2
+root_central_processing_unit_connections_item2("Cooled by AIO Water Cooler")
+root_central_processing_unit_connections --> root_central_processing_unit_connections_item3
+root_central_processing_unit_connections_item3("Connected to RAM via Infinity Fabric")
+root --> root_memory_modules
+root_memory_modules("memory_modules")
+root_memory_modules --> root_memory_modules_total_capacity
+root_memory_modules_total_capacity("total_capacity: 32GB DDR4-3200")
+root_memory_modules --> root_memory_modules_configuration
+root_memory_modules_configuration["configuration"]
+root_memory_modules_configuration --> root_memory_modules_configuration_item0
+root_memory_modules_configuration_item0("Object")
+root_memory_modules_configuration_item0 --> root_memory_modules_configuration_item0_slot
+root_memory_modules_configuration_item0_slot("slot: DIMM_A2")
+root_memory_modules_configuration_item0 --> root_memory_modules_configuration_item0_module
+root_memory_modules_configuration_item0_module("module: 16GB DDR4-3200")
+root_memory_modules_configuration_item0 --> root_memory_modules_configuration_item0_brand
+root_memory_modules_configuration_item0_brand("brand: Corsair Vengeance LPX")
+root_memory_modules_configuration_item0 --> root_memory_modules_configuration_item0_cl
+root_memory_modules_configuration_item0_cl("cl: 16-18-18-36")
+root_memory_modules_configuration --> root_memory_modules_configuration_item1
+root_memory_modules_configuration_item1("Object")
+root_memory_modules_configuration_item1 --> root_memory_modules_configuration_item1_slot
+root_memory_modules_configuration_item1_slot("slot: DIMM_B2")
+root_memory_modules_configuration_item1 --> root_memory_modules_configuration_item1_module
+root_memory_modules_configuration_item1_module("module: 16GB DDR4-3200")
+root_memory_modules_configuration_item1 --> root_memory_modules_configuration_item1_brand
+root_memory_modules_configuration_item1_brand("brand: Corsair Vengeance LPX")
+root_memory_modules_configuration_item1 --> root_memory_modules_configuration_item1_cl
+root_memory_modules_configuration_item1_cl("cl: 16-18-18-36")
+root_memory_modules --> root_memory_modules_dual_channel
+root_memory_modules_dual_channel("dual_channel: Enabled")
+root_memory_modules --> root_memory_modules_xmp_profile
+root_memory_modules_xmp_profile("xmp_profile: Enabled")
+root_memory_modules --> root_memory_modules_connections
+root_memory_modules_connections["connections"]
+root_memory_modules_connections --> root_memory_modules_connections_item0
+root_memory_modules_connections_item0("Connected to CPU via Memory Controller")
+root_memory_modules_connections --> root_memory_modules_connections_item1
+root_memory_modules_connections_item1("Powered by Motherboard DIMM Slots")
+root_memory_modules_connections --> root_memory_modules_connections_item2
+root_memory_modules_connections_item2("Running in Dual Channel Configuration")
+root --> root_bios_uefi
+root_bios_uefi("bios_uefi")
+root_bios_uefi --> root_bios_uefi_type
+root_bios_uefi_type("type: UEFI")
+root_bios_uefi --> root_bios_uefi_version
+root_bios_uefi_version("version: F14")
+root_bios_uefi --> root_bios_uefi_manufacturer
+root_bios_uefi_manufacturer("manufacturer: ASUS")
+root_bios_uefi --> root_bios_uefi_features
+root_bios_uefi_features["features"]
+root_bios_uefi_features --> root_bios_uefi_features_item0
+root_bios_uefi_features_item0("Secure Boot Support")
+root_bios_uefi_features --> root_bios_uefi_features_item1
+root_bios_uefi_features_item1("Fast Boot Enabled")
+root_bios_uefi_features --> root_bios_uefi_features_item2
+root_bios_uefi_features_item2("BIOS Flashback Capability")
+root_bios_uefi_features --> root_bios_uefi_features_item3
+root_bios_uefi_features_item3("EZ Mode")
+root_bios_uefi_features --> root_bios_uefi_features_item4
+root_bios_uefi_features_item4("Advanced Mode")
+root_bios_uefi_features --> root_bios_uefi_features_item5
+root_bios_uefi_features_item5("CPU Overclocking")
+root_bios_uefi_features --> root_bios_uefi_features_item6
+root_bios_uefi_features_item6("Memory Overclocking")
+root_bios_uefi_features --> root_bios_uefi_features_item7
+root_bios_uefi_features_item7("Fan Control")
+root --> root_storage_devices
+root_storage_devices("storage_devices")
+root_storage_devices --> root_storage_devices_nvme_ssd
+root_storage_devices_nvme_ssd("nvme_ssd")
+root_storage_devices_nvme_ssd --> root_storage_devices_nvme_ssd_model
+root_storage_devices_nvme_ssd_model("model: Samsung 980 Pro 1TB")
+root_storage_devices_nvme_ssd --> root_storage_devices_nvme_ssd_interface
+root_storage_devices_nvme_ssd_interface("interface: PCIe 4.0 x4 NVMe")
+root_storage_devices_nvme_ssd --> root_storage_devices_nvme_ssd_location
+root_storage_devices_nvme_ssd_location("location: M.2_1 Slot")
+root_storage_devices_nvme_ssd --> root_storage_devices_nvme_ssd_performance
+root_storage_devices_nvme_ssd_performance("performance: Read: 7000 MB/s, Write: 5000 MB/s")
+root_storage_devices_nvme_ssd --> root_storage_devices_nvme_ssd_interface_connections
+root_storage_devices_nvme_ssd_interface_connections("interface_connections: Connected to CPU PCIe 4.0 lanes")
+root_storage_devices --> root_storage_devices_sata_ssd
+root_storage_devices_sata_ssd("sata_ssd")
+root_storage_devices_sata_ssd --> root_storage_devices_sata_ssd_model
+root_storage_devices_sata_ssd_model("model: Crucial MX500 500GB")
+root_storage_devices_sata_ssd --> root_storage_devices_sata_ssd_interface
+root_storage_devices_sata_ssd_interface("interface: SATA 6Gb/s")
+root_storage_devices_sata_ssd --> root_storage_devices_sata_ssd_location
+root_storage_devices_sata_ssd_location("location: SATA Port 1")
+root_storage_devices_sata_ssd --> root_storage_devices_sata_ssd_performance
+root_storage_devices_sata_ssd_performance("performance: Read: 560 MB/s, Write: 510 MB/s")
+root_storage_devices_sata_ssd --> root_storage_devices_sata_ssd_interface_connections
+root_storage_devices_sata_ssd_interface_connections("interface_connections: Connected to SATA Controller")
+root_storage_devices --> root_storage_devices_hdd
+root_storage_devices_hdd("hdd")
+root_storage_devices_hdd --> root_storage_devices_hdd_model
+root_storage_devices_hdd_model("model: Seagate Barracuda 2TB")
+root_storage_devices_hdd --> root_storage_devices_hdd_interface
+root_storage_devices_hdd_interface("interface: SATA 6Gb/s")
+root_storage_devices_hdd --> root_storage_devices_hdd_location
+root_storage_devices_hdd_location("location: SATA Port 2")
+root_storage_devices_hdd --> root_storage_devices_hdd_performance
+root_storage_devices_hdd_performance("performance: 7200 RPM, 256MB Cache")
+root_storage_devices_hdd --> root_storage_devices_hdd_interface_connections
+root_storage_devices_hdd_interface_connections("interface_connections: Connected to SATA Controller")
+root --> root_graphics_processing_unit
+root_graphics_processing_unit("graphics_processing_unit")
+root_graphics_processing_unit --> root_graphics_processing_unit_manufacturer
+root_graphics_processing_unit_manufacturer("manufacturer: NVIDIA")
+root_graphics_processing_unit --> root_graphics_processing_unit_model
+root_graphics_processing_unit_model("model: RTX 4070 12GB")
+root_graphics_processing_unit --> root_graphics_processing_unit_interface
+root_graphics_processing_unit_interface("interface: PCIe 4.0 x16")
+root_graphics_processing_unit --> root_graphics_processing_unit_slot
+root_graphics_processing_unit_slot("slot: Primary PCIe Slot")
+root_graphics_processing_unit --> root_graphics_processing_unit_connectors
+root_graphics_processing_unit_connectors["connectors"]
+root_graphics_processing_unit_connectors --> root_graphics_processing_unit_connectors_item0
+root_graphics_processing_unit_connectors_item0("3x DisplayPort 1.4a")
+root_graphics_processing_unit_connectors --> root_graphics_processing_unit_connectors_item1
+root_graphics_processing_unit_connectors_item1("1x HDMI 2.1")
+root_graphics_processing_unit --> root_graphics_processing_unit_power
+root_graphics_processing_unit_power("power: PCIe Cable (8-Pin + 8-Pin)")
+root_graphics_processing_unit --> root_graphics_processing_unit_thermal_solution
+root_graphics_processing_unit_thermal_solution("thermal_solution: Custom Air Cooler with Heat Pipes")
+root_graphics_processing_unit --> root_graphics_processing_unit_display_outputs
+root_graphics_processing_unit_display_outputs["display_outputs"]
+root_graphics_processing_unit_display_outputs --> root_graphics_processing_unit_display_outputs_item0
+root_graphics_processing_unit_display_outputs_item0("Primary Monitor - DisplayPort")
+root_graphics_processing_unit_display_outputs --> root_graphics_processing_unit_display_outputs_item1
+root_graphics_processing_unit_display_outputs_item1("Secondary Monitor - HDMI")
+root --> root_motherboard_details
+root_motherboard_details("motherboard_details")
+root_motherboard_details --> root_motherboard_details_model
+root_motherboard_details_model("model: ASUS B550M-PLUS")
+root_motherboard_details --> root_motherboard_details_form_factor
+root_motherboard_details_form_factor("form_factor: Micro-ATX")
+root_motherboard_details --> root_motherboard_details_chipset
+root_motherboard_details_chipset("chipset: AMD B550")
+root_motherboard_details --> root_motherboard_details_socket
+root_motherboard_details_socket("socket: AM4")
+root_motherboard_details --> root_motherboard_details_expansion_slots
+root_motherboard_details_expansion_slots["expansion_slots"]
+root_motherboard_details_expansion_slots --> root_motherboard_details_expansion_slots_item0
+root_motherboard_details_expansion_slots_item0("1x PCIe 4.0 x16 (CPU)")
+root_motherboard_details_expansion_slots --> root_motherboard_details_expansion_slots_item1
+root_motherboard_details_expansion_slots_item1("1x PCIe 3.0 x16 (Physical)")
+root_motherboard_details_expansion_slots --> root_motherboard_details_expansion_slots_item2
+root_motherboard_details_expansion_slots_item2("2x PCIe 3.0 x1")
+root_motherboard_details --> root_motherboard_details_memory_support
+root_motherboard_details_memory_support("memory_support")
+root_motherboard_details_memory_support --> root_motherboard_details_memory_support_slots
+root_motherboard_details_memory_support_slots(("slots: 4"))
+root_motherboard_details_memory_support --> root_motherboard_details_memory_support_max_capacity
+root_motherboard_details_memory_support_max_capacity("max_capacity: 128GB")
+root_motherboard_details_memory_support --> root_motherboard_details_memory_support_supported_types
+root_motherboard_details_memory_support_supported_types("supported_types: DDR4 2133/2400/2666/2933/3200/3600/4000")
+root_motherboard_details --> root_motherboard_details_storage_interfaces
+root_motherboard_details_storage_interfaces["storage_interfaces"]
+root_motherboard_details_storage_interfaces --> root_motherboard_details_storage_interfaces_item0
+root_motherboard_details_storage_interfaces_item0("2x M.2 slots")
+root_motherboard_details_storage_interfaces --> root_motherboard_details_storage_interfaces_item1
+root_motherboard_details_storage_interfaces_item1("1x M.2 (PCIe 4.0 + SATA)")
+root_motherboard_details_storage_interfaces --> root_motherboard_details_storage_interfaces_item2
+root_motherboard_details_storage_interfaces_item2("1x M.2 (PCIe 3.0 + SATA)")
+root_motherboard_details_storage_interfaces --> root_motherboard_details_storage_interfaces_item3
+root_motherboard_details_storage_interfaces_item3("6x SATA 6Gb/s ports")
+root_motherboard_details --> root_motherboard_details_audio
+root_motherboard_details_audio("audio: Realtek ALC887 8-Channel HD Audio")
+root_motherboard_details --> root_motherboard_details_network
+root_motherboard_details_network("network")
+root_motherboard_details_network --> root_motherboard_details_network_wifi
+root_motherboard_details_network_wifi("wifi: WiFi 6 (802.11ax)")
+root_motherboard_details_network --> root_motherboard_details_network_ethernet
+root_motherboard_details_network_ethernet("ethernet: Realtek RTL8111H Gigabit LAN")
+root_motherboard_details --> root_motherboard_details_usb_ports
+root_motherboard_details_usb_ports["usb_ports"]
+root_motherboard_details_usb_ports --> root_motherboard_details_usb_ports_item0
+root_motherboard_details_usb_ports_item0("1x USB 3.2 Gen2 Type-C (Front)")
+root_motherboard_details_usb_ports --> root_motherboard_details_usb_ports_item1
+root_motherboard_details_usb_ports_item1("1x USB 3.2 Gen1 (Front)")
+root_motherboard_details_usb_ports --> root_motherboard_details_usb_ports_item2
+root_motherboard_details_usb_ports_item2("2x USB 3.2 Gen2 (Rear)")
+root_motherboard_details_usb_ports --> root_motherboard_details_usb_ports_item3
+root_motherboard_details_usb_ports_item3("4x USB 2.0 (Rear)")
+root --> root_network_configuration
+root_network_configuration("network_configuration")
+root_network_configuration --> root_network_configuration_wireless
+root_network_configuration_wireless("wireless")
+root_network_configuration_wireless --> root_network_configuration_wireless_standard
+root_network_configuration_wireless_standard("standard: WiFi 6 (802.11ax)")
+root_network_configuration_wireless --> root_network_configuration_wireless_frequency_bands
+root_network_configuration_wireless_frequency_bands("frequency_bands: 2.4 GHz and 5 GHz")
+root_network_configuration_wireless --> root_network_configuration_wireless_max_theoretical_speed
+root_network_configuration_wireless_max_theoretical_speed("max_theoretical_speed: 2.4 Gbps")
+root_network_configuration_wireless --> root_network_configuration_wireless_actual_throughput
+root_network_configuration_wireless_actual_throughput("actual_throughput: ~800 Mbps")
+root_network_configuration_wireless --> root_network_configuration_wireless_security
+root_network_configuration_wireless_security("security: WPA3")
+root_network_configuration_wireless --> root_network_configuration_wireless_antennas
+root_network_configuration_wireless_antennas("antennas: 2x External Magnetic Base")
+root_network_configuration_wireless --> root_network_configuration_wireless_connection_status
+root_network_configuration_wireless_connection_status("connection_status: Connected (5 GHz Band)")
+root_network_configuration --> root_network_configuration_wired
+root_network_configuration_wired("wired")
+root_network_configuration_wired --> root_network_configuration_wired_type
+root_network_configuration_wired_type("type: Gigabit Ethernet")
+root_network_configuration_wired --> root_network_configuration_wired_controller
+root_network_configuration_wired_controller("controller: Realtek RTL8111H")
+root_network_configuration_wired --> root_network_configuration_wired_max_speed
+root_network_configuration_wired_max_speed("max_speed: 1000 Mbps (1 Gbps)")
+root_network_configuration_wired --> root_network_configuration_wired_connection_method
+root_network_configuration_wired_connection_method("connection_method: Cable (Not Biased to Wireless)")
+root_network_configuration_wired --> root_network_configuration_wired_status
+root_network_configuration_wired_status("status: Available, Optionally Used")
+root --> root_power_configuration
+root_power_configuration("power_configuration")
+root_power_configuration --> root_power_configuration_unit
+root_power_configuration_unit("unit: 850W 80+ Gold Modular PSU")
+root_power_configuration --> root_power_configuration_efficiency
+root_power_configuration_efficiency("efficiency: 80 Plus Gold Certified")
+root_power_configuration --> root_power_configuration_modularity
+root_power_configuration_modularity("modularity: Fully Modular Design")
+root_power_configuration --> root_power_configuration_rails
+root_power_configuration_rails("rails: Single +12V Rail")
+root_power_configuration --> root_power_configuration_certification
+root_power_configuration_certification("certification: ATX 12V v2.52")
+root_power_configuration --> root_power_configuration_protections
+root_power_configuration_protections["protections"]
+root_power_configuration_protections --> root_power_configuration_protections_item0
+root_power_configuration_protections_item0("Over Voltage Protection")
+root_power_configuration_protections --> root_power_configuration_protections_item1
+root_power_configuration_protections_item1("Under Voltage Protection")
+root_power_configuration_protections --> root_power_configuration_protections_item2
+root_power_configuration_protections_item2("Over Current Protection")
+root_power_configuration_protections --> root_power_configuration_protections_item3
+root_power_configuration_protections_item3("Short Circuit Protection")
+root_power_configuration_protections --> root_power_configuration_protections_item4
+root_power_configuration_protections_item4("Over Power Protection")
+root_power_configuration_protections --> root_power_configuration_protections_item5
+root_power_configuration_protections_item5("Over Temperature Protection")
+root_power_configuration --> root_power_configuration_connectors
+root_power_configuration_connectors["connectors"]
+root_power_configuration_connectors --> root_power_configuration_connectors_item0
+root_power_configuration_connectors_item0("24-Pin ATX Motherboard")
+root_power_configuration_connectors --> root_power_configuration_connectors_item1
+root_power_configuration_connectors_item1("8-Pin EPS CPU")
+root_power_configuration_connectors --> root_power_configuration_connectors_item2
+root_power_configuration_connectors_item2("2x 8-Pin PCIe (GPU)")
+root_power_configuration_connectors --> root_power_configuration_connectors_item3
+root_power_configuration_connectors_item3("6x SATA Power")
+root_power_configuration_connectors --> root_power_configuration_connectors_item4
+root_power_configuration_connectors_item4("3x Molex 4-Pin")
+root_power_configuration_connectors --> root_power_configuration_connectors_item5
+root_power_configuration_connectors_item5("1x Floppy 4-Pin")
+root --> root_circuit_boards
+root_circuit_boards("circuit_boards")
+root_circuit_boards --> root_circuit_boards_main_motherboard_pcb
+root_circuit_boards_main_motherboard_pcb("main_motherboard_pcb")
+root_circuit_boards_main_motherboard_pcb --> root_circuit_boards_main_motherboard_pcb_layers
+root_circuit_boards_main_motherboard_pcb_layers("layers: 4-Layer PCB")
+root_circuit_boards_main_motherboard_pcb --> root_circuit_boards_main_motherboard_pcb_trace_width
+root_circuit_boards_main_motherboard_pcb_trace_width("trace_width: Optimized for Signal Integrity")
+root_circuit_boards_main_motherboard_pcb --> root_circuit_boards_main_motherboard_pcb_components
+root_circuit_boards_main_motherboard_pcb_components("components: All Surface Mount Components")
+root_circuit_boards_main_motherboard_pcb --> root_circuit_boards_main_motherboard_pcb_status
+root_circuit_boards_main_motherboard_pcb_status("status: Working Correctly")
+root_circuit_boards --> root_circuit_boards_graphics_card_pcb
+root_circuit_boards_graphics_card_pcb("graphics_card_pcb")
+root_circuit_boards_graphics_card_pcb --> root_circuit_boards_graphics_card_pcb_design
+root_circuit_boards_graphics_card_pcb_design("design: Custom PCB Layout")
+root_circuit_boards_graphics_card_pcb --> root_circuit_boards_graphics_card_pcb_power_delivery
+root_circuit_boards_graphics_card_pcb_power_delivery("power_delivery: 12-Phase VRM")
+root_circuit_boards_graphics_card_pcb --> root_circuit_boards_graphics_card_pcb_components
+root_circuit_boards_graphics_card_pcb_components("components: All Components Operational")
+root_circuit_boards_graphics_card_pcb --> root_circuit_boards_graphics_card_pcb_status
+root_circuit_boards_graphics_card_pcb_status("status: Working Correctly")
+root_circuit_boards --> root_circuit_boards_storage_pcbs
+root_circuit_boards_storage_pcbs("storage_pcbs")
+root_circuit_boards_storage_pcbs --> root_circuit_boards_storage_pcbs_nvme_controller
+root_circuit_boards_storage_pcbs_nvme_controller("nvme_controller: NVMe Controller Circuit Working")
+root_circuit_boards_storage_pcbs --> root_circuit_boards_storage_pcbs_sata_controller
+root_circuit_boards_storage_pcbs_sata_controller("sata_controller: SATA Controller Circuit Working")
+root_circuit_boards_storage_pcbs --> root_circuit_boards_storage_pcbs_status
+root_circuit_boards_storage_pcbs_status("status: All Storage Circuits Working")
+root_circuit_boards --> root_circuit_boards_overall_status
+root_circuit_boards_overall_status("overall_status: All PCB circuits working and tested")
+root --> root_cooling_solution
+root_cooling_solution("cooling_solution")
+root_cooling_solution --> root_cooling_solution_cpu_cooling
+root_cooling_solution_cpu_cooling("cpu_cooling")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_type
+root_cooling_solution_cpu_cooling_type("type: AIO Water Cooler")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_model
+root_cooling_solution_cpu_cooling_model("model: NZXT Kraken X63 280mm")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_radiator
+root_cooling_solution_cpu_cooling_radiator("radiator: 280mm (2x 140mm fans)")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_pump
+root_cooling_solution_cpu_cooling_pump("pump: Variable Speed Pump")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_tubing
+root_cooling_solution_cpu_cooling_tubing("tubing: Low-Profile Rubber Tubing")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_compatibility
+root_cooling_solution_cpu_cooling_compatibility("compatibility: AM4/AM5/LGA1700")
+root_cooling_solution_cpu_cooling --> root_cooling_solution_cpu_cooling_connections
+root_cooling_solution_cpu_cooling_connections("connections: Connected to CPU_FAN Header and SATA Power")
+root_cooling_solution --> root_cooling_solution_case_airflow
+root_cooling_solution_case_airflow("case_airflow")
+root_cooling_solution_case_airflow --> root_cooling_solution_case_airflow_front_fans
+root_cooling_solution_case_airflow_front_fans("front_fans: 2x 140mm Intake")
+root_cooling_solution_case_airflow --> root_cooling_solution_case_airflow_rear_fan
+root_cooling_solution_case_airflow_rear_fan("rear_fan: 1x 120mm Exhaust")
+root_cooling_solution_case_airflow --> root_cooling_solution_case_airflow_top_fan
+root_cooling_solution_case_airflow_top_fan("top_fan: 1x 120mm Exhaust (Optional)")
+root_cooling_solution_case_airflow --> root_cooling_solution_case_airflow_positive_pressure
+root_cooling_solution_case_airflow_positive_pressure("positive_pressure: Optimized for Dust Prevention")
+root_cooling_solution --> root_cooling_solution_thermal_paste
+root_cooling_solution_thermal_paste("thermal_paste: High-Performance Thermal Compound Applied")
+root --> root_connection_diagram
+root_connection_diagram("connection_diagram")
+root_connection_diagram --> root_connection_diagram_internal_connections
+root_connection_diagram_internal_connections("internal_connections")
+root_connection_diagram_internal_connections --> root_connection_diagram_internal_connections_power_connections
+root_connection_diagram_internal_connections_power_connections["power_connections"]
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item0
+root_connection_diagram_internal_connections_power_connections_item0("24-Pin ATX from PSU to Motherboard")
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item1
+root_connection_diagram_internal_connections_power_connections_item1("8-Pin EPS from PSU to Motherboard CPU Power")
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item2
+root_connection_diagram_internal_connections_power_connections_item2("2x 8-Pin PCIe from PSU to GPU")
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item3
+root_connection_diagram_internal_connections_power_connections_item3("SATA Power from PSU to Storage Drives")
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item4
+root_connection_diagram_internal_connections_power_connections_item4("SATA Power from PSU to AIO Pump")
+root_connection_diagram_internal_connections_power_connections --> root_connection_diagram_internal_connections_power_connections_item5
+root_connection_diagram_internal_connections_power_connections_item5("Fan Power from Motherboard to Case Fans")
+root_connection_diagram_internal_connections --> root_connection_diagram_internal_connections_data_connections
+root_connection_diagram_internal_connections_data_connections["data_connections"]
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item0
+root_connection_diagram_internal_connections_data_connections_item0("NVMe SSD in M.2 Slot (Direct to CPU)")
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item1
+root_connection_diagram_internal_connections_data_connections_item1("SATA SSD to SATA Port 1")
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item2
+root_connection_diagram_internal_connections_data_connections_item2("HDD to SATA Port 2")
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item3
+root_connection_diagram_internal_connections_data_connections_item3("GPU in PCIe 4.0 x16 Slot")
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item4
+root_connection_diagram_internal_connections_data_connections_item4("Front Panel USB to Internal Header")
+root_connection_diagram_internal_connections_data_connections --> root_connection_diagram_internal_connections_data_connections_item5
+root_connection_diagram_internal_connections_data_connections_item5("Front Panel Audio to Audio Header")
+root_connection_diagram_internal_connections --> root_connection_diagram_internal_connections_control_connections
+root_connection_diagram_internal_connections_control_connections["control_connections"]
+root_connection_diagram_internal_connections_control_connections --> root_connection_diagram_internal_connections_control_connections_item0
+root_connection_diagram_internal_connections_control_connections_item0("Front Panel Power Button")
+root_connection_diagram_internal_connections_control_connections --> root_connection_diagram_internal_connections_control_connections_item1
+root_connection_diagram_internal_connections_control_connections_item1("Front Panel Reset Button")
+root_connection_diagram_internal_connections_control_connections --> root_connection_diagram_internal_connections_control_connections_item2
+root_connection_diagram_internal_connections_control_connections_item2("Front Panel LED Indicator")
+root_connection_diagram_internal_connections_control_connections --> root_connection_diagram_internal_connections_control_connections_item3
+root_connection_diagram_internal_connections_control_connections_item3("HDD Activity LED")
+root_connection_diagram_internal_connections_control_connections --> root_connection_diagram_internal_connections_control_connections_item4
+root_connection_diagram_internal_connections_control_connections_item4("Power LED")
+root_connection_diagram --> root_connection_diagram_external_connections
+root_connection_diagram_external_connections("external_connections")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_power
+root_connection_diagram_external_connections_power("power: IEC C13 Power Cord to PSU")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_display
+root_connection_diagram_external_connections_display["display"]
+root_connection_diagram_external_connections_display --> root_connection_diagram_external_connections_display_item0
+root_connection_diagram_external_connections_display_item0("Primary Monitor via DisplayPort")
+root_connection_diagram_external_connections_display --> root_connection_diagram_external_connections_display_item1
+root_connection_diagram_external_connections_display_item1("Secondary Monitor via HDMI")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_usb_devices
+root_connection_diagram_external_connections_usb_devices["usb_devices"]
+root_connection_diagram_external_connections_usb_devices --> root_connection_diagram_external_connections_usb_devices_item0
+root_connection_diagram_external_connections_usb_devices_item0("Keyboard - USB 3.0")
+root_connection_diagram_external_connections_usb_devices --> root_connection_diagram_external_connections_usb_devices_item1
+root_connection_diagram_external_connections_usb_devices_item1("Mouse - USB 2.0")
+root_connection_diagram_external_connections_usb_devices --> root_connection_diagram_external_connections_usb_devices_item2
+root_connection_diagram_external_connections_usb_devices_item2("Webcam - USB 3.0")
+root_connection_diagram_external_connections_usb_devices --> root_connection_diagram_external_connections_usb_devices_item3
+root_connection_diagram_external_connections_usb_devices_item3("External HDD - USB 3.0")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_audio
+root_connection_diagram_external_connections_audio["audio"]
+root_connection_diagram_external_connections_audio --> root_connection_diagram_external_connections_audio_item0
+root_connection_diagram_external_connections_audio_item0("Desktop Speakers - 3.5mm Jack")
+root_connection_diagram_external_connections_audio --> root_connection_diagram_external_connections_audio_item1
+root_connection_diagram_external_connections_audio_item1("USB Headset - USB Port")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_network
+root_connection_diagram_external_connections_network("network: WiFi 6 Antennas (No Ethernet Cable)")
+root_connection_diagram_external_connections --> root_connection_diagram_external_connections_peripheral
+root_connection_diagram_external_connections_peripheral("peripheral: USB DAC/AMP for Headphones")
+root --> root_operating_system
+root_operating_system("operating_system")
+root_operating_system --> root_operating_system_name
+root_operating_system_name("name: Windows 11 Pro")
+root_operating_system --> root_operating_system_version
+root_operating_system_version("version: 22H2 (Build 22621.2861)")
+root_operating_system --> root_operating_system_architecture
+root_operating_system_architecture("architecture: 64-bit")
+root_operating_system --> root_operating_system_license
+root_operating_system_license("license: Digital License")
+root_operating_system --> root_operating_system_features_enabled
+root_operating_system_features_enabled["features_enabled"]
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item0
+root_operating_system_features_enabled_item0("DirectX 12 Ultimate")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item1
+root_operating_system_features_enabled_item1("Hardware-Accelerated GPU Scheduling")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item2
+root_operating_system_features_enabled_item2("Auto HDR")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item3
+root_operating_system_features_enabled_item3("DirectStorage API")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item4
+root_operating_system_features_enabled_item4("BitLocker Device Encryption")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item5
+root_operating_system_features_enabled_item5("Windows Security")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item6
+root_operating_system_features_enabled_item6("Hyper-V")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item7
+root_operating_system_features_enabled_item7("WSL 2 (Windows Subsystem for Linux)")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item8
+root_operating_system_features_enabled_item8("Windows Terminal")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item9
+root_operating_system_features_enabled_item9("Microsoft Store")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item10
+root_operating_system_features_enabled_item10("Xbox Game Bar")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item11
+root_operating_system_features_enabled_item11("Windows Sandbox")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item12
+root_operating_system_features_enabled_item12("Remote Desktop")
+root_operating_system_features_enabled --> root_operating_system_features_enabled_item13
+root_operating_system_features_enabled_item13("Group Policy Management")
+root_operating_system --> root_operating_system_updates
+root_operating_system_updates("updates: Current and Up to Date")
+```
